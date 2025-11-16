@@ -7,6 +7,13 @@ Este projeto oferece uma API simples para transcrever arquivos de áudio a parti
 - **Download temporário**: o áudio é baixado para uma pasta temporária, transcrito e removido.
 - **Limites**: timeout de download e limite de tamanho para evitar abusos.
 
+**Stack técnico**
+- **Express.js** — servidor HTTP minimalista e eficiente para Node.js.
+- **OpenAI API** — integração com o modelo `whisper-1` para transcrição de áudio.
+- **Node.js nativo** — uso de `fs`, `stream`, `crypto` para manipulação segura de arquivos.
+- **dotenv** — gerenciamento seguro de variáveis de ambiente.
+- **pm2** — gerenciador de processos para produção (mantém a API rodando 24/7).
+
 **Pré-requisitos**
 - Node.js 18+ (ou LTS compatível)
 - npm
